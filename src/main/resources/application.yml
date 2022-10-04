@@ -1,5 +1,8 @@
 server:
   port: 8088
+  error:
+    whitelabel:
+      enabled: false
 
 logging:
   level:
@@ -8,3 +11,10 @@ logging:
 spring:
   messages:
     basename: messages
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1

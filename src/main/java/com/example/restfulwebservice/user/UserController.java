@@ -1,5 +1,6 @@
 package com.example.restfulwebservice.user;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
